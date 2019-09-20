@@ -18,13 +18,13 @@
 }
 
 /* inputs styles */
-textarea:focus, input:focus {
+.confirm-order textarea:focus, input:focus {
   outline: none;
   background: rgba(215, 232, 247, 0.4);
   
 }
 
-textarea, input {
+.confirm-order textarea, input {
   border: #787e9c 2px solid;
   border-radius: 5px;
   font-size: 0.8em;
