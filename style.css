@@ -1,3 +1,10 @@
+/* form styles */
+.confirm-order {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* text align styles */
 .text-center {
   text-align: -webkit-center;
 }
@@ -9,3 +16,41 @@
 .text-left {
   text-align: left;
 }
+
+/* inputs styles */
+textarea:focus, input:focus {
+  outline: none;
+  background: rgba(215, 232, 247, 0.4);
+  
+}
+
+textarea, input {
+  border: #787e9c 2px solid;
+  border-radius: 5px;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+/* button styles */
+.btn {
+  font-size: 1em;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  border: #0088ff 2px solid;
+  color: #0088ff;
+  padding: 0.2em 1em;
+}
+
+.btn-primary:hover {
+  transition: all 0.2s;
+  color: #fff;
+  background: #0088ff;
+}
+
