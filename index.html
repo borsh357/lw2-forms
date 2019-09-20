@@ -6,10 +6,71 @@
     <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <title>Подтверждение заказа</title>
   </head>
 
 <!-- BEGIN BODY -->
   <body>
+    <main class="text-center">
+      <form class="confirm-order" action="#">
+        <table>
+          <tr>
+            <td class="text-right">
+              <label for="name">Фамилия, имя:</label>
+            </td>
+            <td>
+              <input id="name" name="name" type="text" maxlength="50" placeholder="Ивавнов Иван" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right">
+              <label for="email">Адрес электронной почты:</label>
+            </td>
+            <td>
+              <input id="email" name="email" type="email" maxlength="50" placeholder="example@mail.com" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right">
+              <label for="city">Город:</label>
+            </td>
+            <td>
+              <input id="city" name="city" type="text" maxlength="20" placeholder="Город" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right">
+              <label for="phone">Номер телефона:</label>
+            </td>
+            <td>
+              <input id="phone" name="phone" type="tel" maxlength="12" pattern="+7-[0-9]{10}" placeholder="+7" value="+7" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right">
+              <label for="comment">Комментарий к заказу:</label>
+            </td>
+            <td>
+              <textarea id="comment" name="comment" maxlength="300"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-right">
+              <label for="sms-checkbox">Получать уведомления о статусе заказа по СМС:</label>
+            </td>
+            <td>
+              <input id="sms-checkbox" name="sms-checkbox" type="checkbox">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+              <button class="" type="submit">Отправить</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
   </body>
 </html>
